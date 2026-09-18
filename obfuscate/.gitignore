@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Build artifacts
+*.exe
+*.obj
+*.dll
+*.lib
+*.exp
+
+# Generated artifacts
+m_out*.exe
+qa_sample.exe
+host*.obj
+host64_*.obj
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
