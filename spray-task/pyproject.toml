@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spraytask"
+version = "0.1.0"
+description = "Remote scheduled-task sprayer for authorized Windows security assessment"
+requires-python = ">=3.12"
+dependencies = [
+    "impacket==0.13.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0,<9",
+]
+
+[project.scripts]
+spraytask = "spraytask.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["spraytask*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
