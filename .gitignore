@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.egg-info/
+*.obj
+*.exe
+ralph/
+remaining_tasks.json
+.venv/
